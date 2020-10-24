@@ -1,0 +1,54 @@
+body {
+	background-color: #5a5a5a;
+}
+p {
+	color: white;
+	font-size: 30px;
+	font-family: "Lucidia Console", Courier, monospace;
+	
+}
+div {
+	color: white;
+	font-family: "Lucidia Console", Courier, monospace;
+	
+}
+dt {
+	text-indent: 30px;
+	text-align: left;
+	color: white;
+	font-size: 20px;
+	font-family: "Lucidia Console", Courier, monospace;
+}
+dd {
+	font-style: italic;
+	text-align: left;
+	color: white;
+	font-size: 15px;
+	font-family: "Lucidia Console", Courier, monospace;
+}
+button {
+	background-color: #8dcaff;
+	color: white;
+	padding: 15px 32px;
+	font-size: 30px;
+	cursor: pointer;
+	font-family: "Lucidia Console", Courier, monospace;
+}
+.button1 {border-radius: 10px;}
+.quote {
+	text-align: center;
+	font-size: 25px;
+}
+.title {
+	text-align: center;
+	font-size: 50px;
+}
+.info {
+	font-size: 25px;
+}
+.description {
+	text-align: center;
+	font-size: 13px;
+	text-indent: 10px;
+	font-style: italic;
+}
