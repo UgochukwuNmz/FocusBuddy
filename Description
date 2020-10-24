@@ -1,0 +1,46 @@
+### Who is our target customers?
+
+- UT college Students (verify school email)
+
+### Landing Page
+
+- Description of the product
+- Links to registration page
+
+### Registration & Profile
+
+- Get user data
+    - Classes
+    - Major
+    - Year
+    - Optional
+        - Skills | Interests
+        - Myers briggs personality test
+
+### Pre-Matching
+
+- User selects the length of their study session
+    - 25 minutes focused study & 5 minute break
+    - 50 minutes focused study & 10 minutes break
+- Silent mode ~~vs Discussion Mode~~
+
+### Matching Process
+
+1. Class
+2. Major
+3. Year
+4. Optional
+
+### During The Session
+
+- Introduce yourself for 5 minutes (unmuted)
+- Study for 25 or 50 minutes (Force mute)
+- Extend session or find new match (unmuted)
+
+### Features
+
+- Text chat
+
+### Next Steps
+
+-
