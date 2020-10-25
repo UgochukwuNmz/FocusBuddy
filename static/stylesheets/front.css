@@ -1,25 +1,17 @@
-body {
-	background-color: #5a5a5a;
-}
-p {
-	color: white;
-	font-size: 30px;
-	font-family: "Lucidia Console", Courier, monospace;
-	
-}
 div {
 	color: white;
 	font-family: "Lucidia Console", Courier, monospace;
 	
 }
 dt {
-	text-indent: 30px;
+	text-indent: 110px;
 	text-align: left;
 	color: white;
 	font-size: 20px;
 	font-family: "Lucidia Console", Courier, monospace;
 }
 dd {
+	text-indent: 110px;
 	font-style: italic;
 	text-align: left;
 	color: white;
@@ -35,6 +27,9 @@ button {
 	font-family: "Lucidia Console", Courier, monospace;
 }
 .button1 {border-radius: 10px;}
+.button1:hover{
+	transform: scale(1.1);
+}
 .quote {
 	text-align: center;
 	font-size: 25px;
@@ -45,10 +40,10 @@ button {
 }
 .info {
 	font-size: 25px;
+	text-indent: 95px;
 }
 .description {
 	text-align: center;
 	font-size: 13px;
-	text-indent: 10px;
 	font-style: italic;
 }

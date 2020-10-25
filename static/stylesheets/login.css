@@ -1,0 +1,39 @@
+div {
+    color: white;
+	font-family: "Lucidia Console", Courier, monospace;
+}
+
+.form-group {
+    font-size: 20px;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.text-box {
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 0;
+    border-bottom: solid #8dcaff 1px;
+}
+::placeholder{
+    color: rgb(216, 216, 216);
+}
+
+.row{
+    display: flex;
+}
+.column {
+    flex: 50%;
+}
+button {
+    background-color: #8dcaff;
+	color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button {border-radius: 10px;}

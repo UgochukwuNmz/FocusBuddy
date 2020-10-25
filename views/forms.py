@@ -19,4 +19,3 @@ class RegisterForm(FlaskForm):
     class4 = StringField('Class')
     class5 = StringField('Class')
     class6 = StringField('Class')
-    class7 = StringField('Class')

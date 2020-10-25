@@ -1,0 +1,20 @@
+.carousel-inner {
+    width: 100%;
+}
+
+#latestRelease {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#latestReleaseImage img {
+    height: 75%;
+}
+
+.card {
+    background-color: #5a5a5a;
+}
+
+.card-header {
+    font-size: x-large;
+}

@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(15deg, #8dcaff 0%, #558bbb 31%,#5a5a5a 95%);
+    color: white;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 1%;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}

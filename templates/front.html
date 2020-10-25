@@ -2,12 +2,12 @@
 <html>
 	<head>
 		<title>Focus Buddy</title>
-		<link href="front.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/stylesheets/front.css') }}"> 
 	</head>
 	
 	<body>
 		<div>
-			<div class="title">	<img src="logo.png" alt="logo"> </div> 
+			<div class="title">	<img src="../static/images/logo.png" alt="logo"> </div> 
 
 			<div class="description">In these trying times, 
 			we know it's hard to interact with strangers. </div>
@@ -29,7 +29,7 @@
 				<dd>Make a new friend?</dd>
 			</dl>
 			<div align="center">
-				<button class="button button1">Sign up now</button>
+				<button class="button button1" href="{{ url_for('auth_bp.login') }}">Sign up now</button>
 			</div>
 		</div>
 	</body>

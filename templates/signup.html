@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/stylesheets/signup.css') }}"> 
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="center">
+        <h3 class="title">Sign Up</h3>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-danger">
+                {{ messages[0] }} Go to <a href="{{ url_for('auth_bp.login') }}">login page</a>.
+            </div>
+        {% endif %}
+        {% endwith %}
+        <form action="/signup" method="POST">
+            <div class="row">
+                <div class="column">
+                    <div class="form-group">
+                        {{ form.name(placeholder="Enter name", class_="text-box") }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.email(placeholder="Enter email address", class_="text-box") }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.password(placeholder="Enter password", class_="text-box") }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.confirm(placeholder="Enter password again", class_="text-box") }}
+                    </div>    
+                    <div class="form-group">
+                        {{ form.major(placeholder="Enter major", class_="text-box") }}
+                    </div>   
+                    <div class="form-group">
+                        {{ form.year(placeholder="Enter class year", class_="text-box") }}
+                    </div>   
+                </div>
+                <div class="column">
+                    <div class="form-group">
+                        {{ form.class1(placeholder="Add a class", class_="text-box") }}
+                    </div>   
+                    <div class="form-group">
+                        {{ form.class2(placeholder="Add a class", class_="text-box") }}
+                    </div>   
+                    <div class="form-group">
+                        {{ form.class3(placeholder="Add a class", class_="text-box") }}
+                    </div>   
+                    <div class="form-group">
+                        {{ form.class4(placeholder="Add a class", class_="text-box") }}
+                    </div>   
+                    <div class="form-group">
+                        {{ form.class5(placeholder="Add a class", class_="text-box") }}
+                    </div>   
+                    <div class="form-group">
+                        {{ form.class6(placeholder="Add a class", class_="text-box") }}
+                    </div>   
+                </div>
+            </div>
+            <button class="button button">Sign Up</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

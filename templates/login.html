@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/stylesheets/login.css') }}"> 
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="center">
+        <h3 class="title">Login</h3>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-danger">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+        {% endwith %}
+        <form method="POST" action="/login">
+            <div class="row" align="center">
+                <div class="column">
+                    <div class="form-group">
+                        {{ form.email(placeholder="Enter email address", class_="text-box") }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.password(placeholder="Enter password", class_="text-box") }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.remember(placeholder="Remember me") }} {{ form.remember.label }}
+                    </div>    
+                </div>  
+            </div>
+            <button class="button button" onclick="window.location.href='{{url_for('profile_bp.profile_page')}}';">Log in</button>
+        </form>
+        <p>Don't have an account? Register <a href="{{ url_for('auth_bp.signup') }}">here</a></p>
+    </div>
+</div>
+{% endblock %}

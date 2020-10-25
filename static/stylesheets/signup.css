@@ -1,0 +1,44 @@
+div {
+    color: white;
+	font-family: "Lucidia Console", Courier, monospace;
+}
+.column {
+    width: 50%;
+}
+
+.form-group {
+    font-size: 20px;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.text-box {
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 0;
+    border-bottom: solid #8dcaff 1px;
+}
+
+::placeholder{
+    color: rgb(216, 216, 216);
+}
+
+button {
+    background-color: #8dcaff;
+	color: white;
+    cursor: pointer;
+}
+.button {border-radius: 10px;}
+
+/* retains background style with autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}
